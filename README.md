@@ -24,3 +24,6 @@ Just open `Skywarrior.html` in a modern browser (Chrome, Safari, or Firefox). No
 ```
 Skywarrior.html   # Full game: markup, styles, embedded Three.js engine, and game logic in one file
 ```
+
+## License
+All Rights Reserved — see [LICENSE](LICENSE). Shared publicly for portfolio purposes; please contact the author before reusing.
