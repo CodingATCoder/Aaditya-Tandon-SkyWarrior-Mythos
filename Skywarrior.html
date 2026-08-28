@@ -3991,10 +3991,10 @@ const POSTFX={ ultra:{bloom:true,ssao:true,smaa:true}, high:{bloom:true,ssao:fal
                 normal:{bloom:true,ssao:false,smaa:false}, low:{bloom:false,ssao:false,smaa:false} };
 function PFX(){ return POSTFX[SETTINGS.quality]||POSTFX.high; }
 const QUALITY={
-  ultra :{terrainRes:480, forest:14000, rocks:4200, trees:2200, bushes:1500, grass:1100, shadows:true,  far:42000, fogMul:1.00, waveSeg:72},
-  high  :{terrainRes:400, forest: 9000, rocks:3000, trees:1500, bushes:1000, grass: 700, shadows:true,  far:34000, fogMul:1.15, waveSeg:56},
-  normal:{terrainRes:300, forest: 5000, rocks:1600, trees: 800, bushes: 500, grass: 300, shadows:false, far:24000, fogMul:1.45, waveSeg:40},
-  low   :{terrainRes:200, forest: 2000, rocks: 600, trees: 300, bushes: 180, grass: 100, shadows:false, far:16000, fogMul:1.95, waveSeg:24}
+  ultra :{terrainRes:480, forest:40000, rocks:4200, trees:6000, bushes:4000, grass:3000, shadows:true,  far:42000, fogMul:1.00, waveSeg:72},
+  high  :{terrainRes:400, forest:25000, rocks:3000, trees:4000, bushes:2500, grass:2000, shadows:true,  far:34000, fogMul:1.15, waveSeg:56},
+  normal:{terrainRes:300, forest:14000, rocks:1600, trees:2200, bushes:1400, grass: 900, shadows:false, far:24000, fogMul:1.45, waveSeg:40},
+  low   :{terrainRes:200, forest: 6000, rocks: 600, trees: 900, bushes: 500, grass: 300, shadows:false, far:16000, fogMul:1.95, waveSeg:24}
 };
 function Q(){ return QUALITY[SETTINGS.quality]||QUALITY.high; }
 const AIRCRAFT=[
@@ -4895,7 +4895,7 @@ function buildAirbase(cx,cz,friendly){
   const h=getTerrainHeight(cx,cz);
   createRunway(cx,h,cz,friendly);
   createControlTower(cx+42,getTerrainHeight(cx+42,cz+44),cz+44);
-  createHangar(cx-42,getTerrainHeight(cx-42,cz+62),cz+62,0.3);s
+  createHangar(cx-42,getTerrainHeight(cx-42,cz+62),cz+62,0.3);
   createHangar(cx-62,getTerrainHeight(cx-62,cz-44),cz-44,-0.4);
   createFuelDepot(cx+58,getTerrainHeight(cx+58,cz-52),cz-52);
   if(!friendly){
