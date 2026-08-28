@@ -13,12 +13,27 @@ You pilot a fighter aircraft over a war-torn 3D landscape, engaging enemy aircra
 - **Radar & targeting**: target selection, target influence/bright indicators, missile target tracking
 - **Base operations**: takeoff and landing at runways/bases
 - **Dual control schemes**:
-  - Keyboard/mouse (WASD for pitch/roll, Space for firing, mouse-look camera)
+  - Keyboard/mouse (Arrow Keys for pitch/roll, Space for firing, mouse-look camera)
+  - Speed (Keys 0-9 or W/S);
+  - Missiles (M for opening seeker and then WASD to move locking and M to fire or close seeker)
+  - Bomb (B)
+  - Flaps (F)
+  - Radio (R)
+  - AutoPilot (P)
+  - Landing Gear (G)
+  - Speeds 1-3 and full flaps and gear are required for a landing.
+  - Afterburner (V)
+  - Flares(for SAM MISSILES) (X)
+  - Map (Z)
+  - Wingmen; Form/Engage (L)
+  - TimeOFDay (T)
+  - Camera View (C)
   - Full touch UI for mobile/tablet — virtual stick, throttle slider, and on-screen fire/action buttons (auto-enabled in touch mode)
 - Responsive viewport handling for both desktop and mobile play
 
 ## Run it
-Just open `Skywarrior.html` in a modern browser (Chrome, Safari, or Firefox). No installation, dependencies, or server needed — the entire game, including its 3D engine, is bundled in the file.
+Just open `Skywarrior.html` in a modern browser (Chrome, Safari, or Firefox). No installation, dependencies, or server needed — the entire game, including its 3D engine, is bundled in the file. To use microphone run on terminal or on VS Code
+- **To start after running the game press 9, V and then nose down.
 
 ## Project Structure
 ```
